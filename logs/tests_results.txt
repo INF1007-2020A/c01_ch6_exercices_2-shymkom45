@@ -1,0 +1,25 @@
+test_color_name_to_hex (__main__.TestExercice) ... ERROR
+test_list_to_dict (__main__.TestExercice) ... ok
+test_odd_integer_for_loop (__main__.TestExercice) ... ok
+test_odd_integer_list_comprehension (__main__.TestExercice) ... ok
+test_word_dict_comprehension (__main__.TestExercice) ... ok
+test_word_dict_for_loop (__main__.TestExercice) ... ok
+
+======================================================================
+ERROR: test_color_name_to_hex (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 34, in test_color_name_to_hex
+    output = [exercice.color_name_to_hex(v) for v in colors]
+  File "test_exercice.py", line 34, in <listcomp>
+    output = [exercice.color_name_to_hex(v) for v in colors]
+  File "/home/runner/work/c01_ch6_exercices_2-shymkom45/c01_ch6_exercices_2-shymkom45/exercice.py", line 16, in color_name_to_hex
+    return [(color, hex_values[color]) for color in colors]
+  File "/home/runner/work/c01_ch6_exercices_2-shymkom45/c01_ch6_exercices_2-shymkom45/exercice.py", line 16, in <listcomp>
+    return [(color, hex_values[color]) for color in colors]
+KeyError: 'orange'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (errors=1)
